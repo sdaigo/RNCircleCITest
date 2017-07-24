@@ -1,7 +1,5 @@
 machine:
   xcode:
     version: 8.3.3
-  dependencies:
-    pre:
-    - brew update
-    - brew install node
+  node:
+    version: 6.9.1
