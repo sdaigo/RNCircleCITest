@@ -1,5 +1,7 @@
 machine:
+  environment:
+    XCODE_SCHEME: "RNCircleCITest"
+    XCODE_WORKSPACE: "platforms/ios"
+    XCODE_PROJECT: "RNCircleCITest.xcodeproj"
   xcode:
     version: 8.3.3
-  node:
-    version: 6.9.1
