@@ -1,3 +1,5 @@
 machine:
   xcode:
     version: 8.3.3
+  node:
+    version: 6.9.1
