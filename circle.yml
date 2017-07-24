@@ -6,6 +6,6 @@ dependencies:
     - brew install node
 deployment:
   preview:
-    branch: /^(preview$).+$/
+    branch: preview-markdown
     commands:
       - ./scripts/deploy_deploygate.sh
