@@ -17,4 +17,4 @@ deployment:
   preview:
     branch: preview-markdown
     commands:
-      - bundle exec fastlane test
+      - cd ios && bundle exec fastlane test
