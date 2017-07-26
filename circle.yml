@@ -5,6 +5,9 @@ machine:
 dependencies:
   override:
     - brew install node
+    - bundle check --path=vendor/bundle || bundle install --path=vendor/bundle --jobs=4 --retry=3 --without development
+  cache_directories:
+    - vendor/bundle
 
 test:
   override:
@@ -14,4 +17,4 @@ deployment:
   preview:
     branch: preview-markdown
     commands:
-      - fastlane
+      - bundle exec fastlane test
