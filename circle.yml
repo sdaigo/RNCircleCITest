@@ -1,6 +1,10 @@
 machine:
   xcode:
     version: 8.3.3
+  ruby:
+    version: "2.4.1"
+  node:
+    version: "6.9.1"
 deployment:
   preview:
     branch: preview-markdown
