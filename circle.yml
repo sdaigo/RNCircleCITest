@@ -1,11 +1,23 @@
 machine:
   xcode:
     version: 8.3.3
+
 dependencies:
   override:
     - brew install node
+    - bundle check --path=vendor/bundle || bundle install --path=vendor/bundle --jobs=4 --retry=3 --without development
+  cache_directories:
+    - vendor/bundle
+test:
+  override:
+    - echo 'skip test!'
+
 deployment:
   preview:
-    branch: /^(preview$).+$/
+    branch: preview-markdown
     commands:
-      - ./scripts/deploy_deploygate.sh
+      - cd ios && bundle exec fastlane test
+  release:
+    branch: master
+    command:
+      - echo 'Hello!!!!!'
