@@ -31,6 +31,10 @@ platform :ios do
     # You can define as many lanes as you want
   end
 
+  lane :test do
+    puts "Test!"
+  end
+
   after_all do |lane|
     # This block is called, only if the executed lane was successful
 
