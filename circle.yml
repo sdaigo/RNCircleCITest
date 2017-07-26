@@ -6,6 +6,10 @@ dependencies:
   override:
     - brew install node
 
+test:
+  override:
+    - echo 'skip test!'
+
 deployment:
   preview:
     branch: preview-markdown
