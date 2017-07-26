@@ -22,8 +22,12 @@ platform :ios do
 
   desc "Runs all the tests"
   lane :test do
-    puts "Hi there"
+    puts "Hi there, do not run on master branch"
   end
+
+  desc "Runs release"
+  lane :release do
+    puts "Release!!!!!"
 
   # You can define as many lanes as you want
 

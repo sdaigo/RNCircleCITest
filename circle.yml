@@ -22,4 +22,4 @@ deployment:
   release:
     branch: master
     command:
-      - echo 'Hello!!!!!'
+      - cd ios && bundle exec fastlane release
