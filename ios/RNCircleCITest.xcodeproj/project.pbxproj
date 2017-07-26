@@ -1069,6 +1069,7 @@
 					"-ObjC",
 					"-lc++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.badwitch.RNCircleCITest;
 				PRODUCT_NAME = RNCircleCITest;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1087,6 +1088,7 @@
 					"-ObjC",
 					"-lc++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.badwitch.RNCircleCITest;
 				PRODUCT_NAME = RNCircleCITest;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
