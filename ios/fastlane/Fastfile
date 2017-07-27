@@ -28,7 +28,6 @@ platform :ios do
   desc "Runs release"
   lane :release do
     puts "Release!!!!!"
-    # You can define as many lanes as you want
   end
 
   after_all do |lane|
