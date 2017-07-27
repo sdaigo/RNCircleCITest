@@ -10,9 +10,10 @@ dependencies:
     #   curl -L https://git.io/n-install | bash -s -- -y 6.9.5
     #   . ~/.bash_profile
     - which node || brew install node && brew link node
+    - pwd
   post:
-    - node -v
-    - npm -v
+    - pwd && node -v
+    - pwd && npm -v
   cache_directories:
     - node_modules
     - vendor/bundle
