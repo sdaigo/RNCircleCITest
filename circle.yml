@@ -1,14 +1,16 @@
 machine:
   xcode:
     version: 8.3.3
-
+  environment:
+    PATH: '~/n/bin:$PATH'
 dependencies:
   pre:
-    - export PATH=~/n/bin:$PATH
     - which n || curl -L https://git.io/n-install | N_PREFIX=~/n bash -s -- -y 6.9.5
-    - source ~/.bash_profile
   override:
     - bundle check --path=vendor/bundle || bundle install --path=vendor/bundle --jobs=4 --retry=3 --without development
+  post:
+    - export PATH=~/n/bin:$PATH
+    - source ~/.bash_profile
   cache_directories:
     - node_modules
     - vendor/bundle
