@@ -11,6 +11,7 @@ dependencies:
     ##   . ~/.bash_profile
     - which node || brew install node && brew link node
     - pwd
+    - npm install
   post:
     - pwd && node -v
     - pwd && npm -v
