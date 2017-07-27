@@ -2,7 +2,7 @@ machine:
   xcode:
     version: 8.3.3
   environment:
-    PATH: '~/n/bin'
+    PATH: '~/n/bin:$PATH'
 dependencies:
   override:
     - bundle check --path=vendor/bundle || bundle install --path=vendor/bundle --jobs=4 --retry=3 --without development
