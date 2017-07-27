@@ -6,9 +6,10 @@ machine:
 dependencies:
   override:
     - bundle check --path=vendor/bundle || bundle install --path=vendor/bundle --jobs=4 --retry=3 --without development
-    - |
-      curl -L https://git.io/n-install | bash -s -- -y 6.9.5
-      . ~/.bash_profile
+    # - |
+    #   curl -L https://git.io/n-install | bash -s -- -y 6.9.5
+    #   . ~/.bash_profile
+    - brew install node
   post:
     - node -v
     - npm -v
