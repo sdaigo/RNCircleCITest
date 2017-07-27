@@ -10,7 +10,6 @@ dependencies:
       curl -L https://git.io/n-install | bash -s -- -y 6.9.5
       source ~/.bash_profile
   post:
-    - which node
     - node -v
     - npm -v
   cache_directories:
