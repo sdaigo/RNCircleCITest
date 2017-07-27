@@ -4,14 +4,11 @@ machine:
 
 dependencies:
   override:
-    - brew install node
+    - brew install node@6
     - bundle check --path=vendor/bundle || bundle install --path=vendor/bundle --jobs=4 --retry=3 --without development
   cache_directories:
+    - node_modules
     - vendor/bundle
-
-test:
-  override:
-    - echo 'skip test!'
 
 deployment:
   preview:
