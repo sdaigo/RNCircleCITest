@@ -15,7 +15,7 @@ dependencies:
     - ~/n
 test:
   override:
-    - echo 'skip test!'
+    - echo 'skip test'
 
 deployment:
   preview:
