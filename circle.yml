@@ -5,7 +5,10 @@ machine:
     PATH: '~/n/bin:$PATH'
 dependencies:
   pre:
-    - curl -L https://git.io/n-install | N_PREFIX=~/n bash -s -- -y 6.9.5 && source ~/.bash_profile
+    - |
+      curl -L https://git.io/n-install | bash -s -- -y 6.9.5
+      source ~/.bash_profile
+
   cache_directories:
     - node_modules
 test:
