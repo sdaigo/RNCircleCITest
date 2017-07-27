@@ -5,11 +5,10 @@ dependencies:
   pre:
     - curl -L https://git.io/n-install | N_PREFIX=~/n bash -s -- -y
     - export PATH=~/n/bin:$PATH
+    - source ~/.bash_profile
   override:
     - n 6.9.5
     - bundle check --path=vendor/bundle || bundle install --path=vendor/bundle --jobs=4 --retry=3 --without development
-  post:
-    - source ~/.bash_profile
   cache_directories:
     - node_modules
     - vendor/bundle
