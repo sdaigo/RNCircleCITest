@@ -3,10 +3,10 @@ machine:
     version: 8.3.3
 dependencies:
   pre:
-    - curl -L https://git.io/n-install | N_PREFIX=~/n bash
+    - curl -L https://git.io/n-install | N_PREFIX=~/n bash -s -- -y
     - export PATH=~/n/bin:$PATH
   override:
-    - n install 6.9.5
+    - n 6.9.5
     - bundle check --path=vendor/bundle || bundle install --path=vendor/bundle --jobs=4 --retry=3 --without development
   post:
     - source ~/.bash_profile
