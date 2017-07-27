@@ -7,7 +7,8 @@ dependencies:
     - |
       curl -L https://git.io/n-install | bash -s -- -y 6.9.5
       source ~/.bash_profile
-
+  post:
+    - node -v
   cache_directories:
     - node_modules
     - vendor/bundle
