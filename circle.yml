@@ -13,6 +13,7 @@ dependencies:
     - pwd
     - npm install
   post:
+    - nca
     - pwd && node -v
     - pwd && npm -v
   cache_directories:
